@@ -24,7 +24,9 @@ INSERT INTO usuarios (nome, email, senha, cpf, data_nasc, cargo)
 VALUES 
     ('admin', 'admin@gmail.com', 'admin123@', '000.000.000-00', '2000-01-01', 'Admin'),
     ('Rudolfo', 'rudolfo@gmail.com', 'rudolfo123', '001.000.000-23', '2008-02-28', 'Admin'),
-    ('Pierre', 'pierre@gmail.com', 'pierre123', '123.456.678-10', '2000-01-01', 'Funcionario');
+    ('Pierre', 'pierre@gmail.com', 'pierre123', '123.456.678-10', '2000-01-01', 'Funcionario'),
+    
+    
 
     
     

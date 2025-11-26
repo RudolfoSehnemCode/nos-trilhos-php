@@ -86,18 +86,23 @@ if(!isset($_SESSION['id'])){
       document.getElementById("botaoAbrirSidebar").style.display = "block";
     }
 
+    function mostrarMensagem() {
+      document.getElementById("mensagem").style.display = "block";
+    }
+
+    
     function abrirModalSaida() {
-    document.getElementById("modalSaida").style.display = "flex";
-  }
+      document.getElementById("modalSaida").style.display = "flex";
+    }
 
-  function fecharModalSaida() {
-    document.getElementById("modalSaida").style.display = "none";
-  }
+    function fecharModalSaida() {
+      document.getElementById("modalSaida").style.display = "none";
+    }
 
-  function confirmarSaida() {
-    alert("Você saiu!");
-    fecharModalSaida();
-  }
+    function confirmarSaida() {
+      alert("Você saiu!");
+      fecharModalSaida();
+    }
   </script>
 
 </body>

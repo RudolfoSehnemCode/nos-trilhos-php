@@ -145,8 +145,8 @@ if(!isset($_SESSION['id'])){
 </head>
 
 <body>
-
- <button id="botaoAbrirSidebar" class="abrir-btn1" onclick="abrirSidebar()">☰</button>
+  
+    <button id="botaoAbrirSidebar" class="abrir-btn1" onclick="abrirSidebar()">☰</button>
 
   
    <div id="sidebar1" class="sidebar1">
@@ -162,20 +162,22 @@ if(!isset($_SESSION['id'])){
 
     
 
-    <a href="logout.php"> <img src="../images/sair (1).png" alt=""> Sair </a>
+  <a href="logout.php"> <img src="../images/sair (1).png" alt=""> Sair </a>
   
   </div>
   </div>
 
+  
+  <header class="topo2">
 
-  <div class="ntUserAdminAddPage">
-   
-
-     <header class="topo2">
     <div class="topo2">
       NOS TRILHOS
     </div>
   </header>
+  <div class="ntUserAdminAddPage">
+   
+
+     
     <p class="ntUserAdminAddPage__subtitle">Cadastro de Usuário</p>
 
     <div class="ntUserAdminAddPage__card">
@@ -183,7 +185,7 @@ if(!isset($_SESSION['id'])){
         <div class="ntUserAdminAddPage__table">
           <div class="ntUserAdminAddPage__row">
             <div class="ntUserAdminAddPage__cell">
-              <label class="ntUserAdminAddPage__label" for="nome">Nome</label>
+              <label class="ntUserAdminAddPage__label"  for="nome">Nome</label>
               <input class="ntUserAdminAddPage__input" id="nome" type="text" name="nome" required>
             </div>
             <div class="ntUserAdminAddPage__cell">

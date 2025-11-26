@@ -43,6 +43,7 @@ if(!isset($_SESSION['id'])){
 
   
   <header class="topo2">
+
     <div class="topo2">
       NOS TRILHOS
     </div>
@@ -160,19 +161,7 @@ if(!isset($_SESSION['id'])){
       document.getElementById("mensagem").style.display = "block";
     }
 
-    
-    function abrirModalSaida() {
-      document.getElementById("modalSaida").style.display = "flex";
-    }
 
-    function fecharModalSaida() {
-      document.getElementById("modalSaida").style.display = "none";
-    }
-
-    function confirmarSaida() {
-      alert("Você saiu!");
-      fecharModalSaida();
-    }
   </script>
 
 </body>

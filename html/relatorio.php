@@ -33,9 +33,6 @@ if(!isset($_SESSION['id'])){
     <a href="../html/relatorio.php"> <img src="../images/relatorio.png" alt="">Relatório e Análise</a>
     <a href="../html/alertas.php"><img src="../images/sinos.png" alt="">Notificações</a>
     <a href="../html/dashboard2.php"><img src="../images/painel.png" alt=""> Dashboard</a>
-
-    
-
   <a href="logout.php"> <img src="../images/sair (1).png" alt=""> Sair </a>
   
   </div>
