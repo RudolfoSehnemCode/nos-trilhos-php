@@ -73,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="Remenber-me">
                 <input type="checkbox">
-                <p class="box1">Lembrar-me</p>
+                
             </div>
 
             <div class="btn">
