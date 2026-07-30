@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include __DIR__ . '/../src/config/db.php';
 
 session_start();
 
@@ -20,7 +20,7 @@ if(!isset($_SESSION['id'])){
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Início - NOS TRILHOS</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
       
       .ntUserAdminAddPage {
@@ -153,16 +153,16 @@ if(!isset($_SESSION['id'])){
     <p class="menuside1"><strong>Menu</strong></p>
     <hr>
     <a href="javascript:void(0)" class="fechar-btn1" onclick="fecharSidebar()">✖</a>
-    <a href="../html/dashboard.php"> <img src="../images/casa (1).png" alt=""> Início</a>
-    <a href="../html/gestao.php"> <img src="../images/rotas.png" alt="">Gestão de Rotas</a>
-    <a href="../html/manutencao.php"><img src="../images/manutencao (2).png" alt="">Manutenção</a>
-    <a href="../html/relatorio.php"> <img src="../images/relatorio.png" alt="">Relatório e Análise</a>
-    <a href="../html/alertas.php"><img src="../images/sinos.png" alt="">Notificações</a>
-    <a href="../html/dashboard2.php"><img src="../images/painel.png" alt=""> Dashboard</a>
+    <a href="dashboard.php"> <img src="images/casa (1).png" alt=""> Início</a>
+    <a href="gestao.php"> <img src="images/rotas.png" alt="">Gestão de Rotas</a>
+    <a href="manutencao.php"><img src="images/manutencao (2).png" alt="">Manutenção</a>
+    <a href="relatorio.php"> <img src="images/relatorio.png" alt="">Relatório e Análise</a>
+    <a href="alertas.php"><img src="images/sinos.png" alt="">Notificações</a>
+    <a href="dashboard2.php"><img src="images/painel.png" alt=""> Dashboard</a>
 
     
 
-  <a href="logout.php"> <img src="../images/sair (1).png" alt=""> Sair </a>
+  <a href="logout.php"> <img src="images/sair (1).png" alt=""> Sair </a>
   
   </div>
   </div>

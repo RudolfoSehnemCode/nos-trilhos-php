@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include __DIR__ . '/../src/config/db.php';
 session_start();
 
 if(!isset($_SESSION['id'])){
@@ -16,7 +16,7 @@ if(!isset($_SESSION['id'])){
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Início - NOS TRILHOS</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -28,13 +28,13 @@ if(!isset($_SESSION['id'])){
     <p class="menuside1"><strong>Menu</strong></p>
     <hr>
     <a href="javascript:void(0)" class="fechar-btn1" onclick="fecharSidebar()">✖</a>
-    <a href="../html/dashboard.php"> <img src="../images/casa (1).png" alt=""> Início</a>
-    <a href="../html/gestao.php"> <img src="../images/rotas.png" alt="">Gestão de Rotas</a>
-    <a href="../html/manutencao.php"><img src="../images/manutencao (2).png" alt="">Manutenção</a>
-    <a href="../html/relatorio.php"> <img src="../images/relatorio.png" alt="">Relatório e Análise</a>
-    <a href="../html/alertas.php"><img src="../images/sinos.png" alt="">Notificações</a>
-    <a href="../html/dashboard2.php"><img src="../images/painel.png" alt=""> Dashboard</a>
-    <a href="logout.php"> <img src="../images/sair (1).png" alt=""> Sair </a>
+    <a href="dashboard.php"> <img src="images/casa (1).png" alt=""> Início</a>
+    <a href="gestao.php"> <img src="images/rotas.png" alt="">Gestão de Rotas</a>
+    <a href="manutencao.php"><img src="images/manutencao (2).png" alt="">Manutenção</a>
+    <a href="relatorio.php"> <img src="images/relatorio.png" alt="">Relatório e Análise</a>
+    <a href="alertas.php"><img src="images/sinos.png" alt="">Notificações</a>
+    <a href="dashboard2.php"><img src="images/painel.png" alt=""> Dashboard</a>
+    <a href="logout.php"> <img src="images/sair (1).png" alt=""> Sair </a>
 
 
     
@@ -45,7 +45,7 @@ if(!isset($_SESSION['id'])){
 
   <div class="search-container">
     <input type="text" placeholder="O que você procura?" style="text-align: center;">
-    <img src="../images/lupa.png" alt="" style="height: 20px; position: relative; right: 31px;">
+    <img src="images/lupa.png" alt="" style="height: 20px; position: relative; right: 31px;">
   </div>
 
   <div class="linha-com-texto">
@@ -56,29 +56,29 @@ if(!isset($_SESSION['id'])){
 
   <div class="menu-list">
 
-       <a href="../html/gestao.php" class="menu-item">
+       <a href="gestao.php" class="menu-item">
         <span class="number">1</span> <span>Gestão de Rotas</span>
   </a>
 
-    <a href="../html/manutencao.php" class="menu-item">
+    <a href="manutencao.php" class="menu-item">
         <span class="number">2</span> <span>Manutenção</span>
   </a>
 
-       <a href="../html/relatorio.php" class="menu-item">
+       <a href="relatorio.php" class="menu-item">
         <span class="number">3</span> <span>Relatórios e Análises</span>
   </a>
 
-    <a href="../html/alertas.php" class="menu-item">
+    <a href="alertas.php" class="menu-item">
         <span class="number">4</span> <span>Alertas e Notificações</span>
   </a>
 
-         <a href="../html/dashboard2.php" class="menu-item">
+         <a href="dashboard2.php" class="menu-item">
         <span class="number">5</span> <span>Dashboard</span>
   </a>
 
   <?php
       if ($_SESSION['user_cargo'] === 'Admin'): ?>
-        <a href="../html/adicionar-funcionario.php" class="menu-item">
+        <a href="adicionar-funcionario.php" class="menu-item">
           <span class="number">6</span> <span>Administração de Usuários</span>
         </a>
       <?php endif; ?>

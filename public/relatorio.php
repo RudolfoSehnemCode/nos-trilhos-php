@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include __DIR__ . '/../src/config/db.php';
 session_start();
 if(!isset($_SESSION['id'])){
   header("location: loginfaca.php");
@@ -15,7 +15,7 @@ if(!isset($_SESSION['id'])){
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -27,13 +27,13 @@ if(!isset($_SESSION['id'])){
     <p class="menuside1"><strong>Menu</strong></p>
     <hr>
     <a href="javascript:void(0)" class="fechar-btn1" onclick="fecharSidebar()">✖</a>
-    <a href="../html/dashboard.php"> <img src="../images/casa (1).png" alt=""> Início</a>
-    <a href="../html/gestao.php"> <img src="../images/rotas.png" alt="">Gestão de Rotas</a>
-    <a href="../html/manutencao.php"><img src="../images/manutencao (2).png" alt="">Manutenção</a>
-    <a href="../html/relatorio.php"> <img src="../images/relatorio.png" alt="">Relatório e Análise</a>
-    <a href="../html/alertas.php"><img src="../images/sinos.png" alt="">Notificações</a>
-    <a href="../html/dashboard2.php"><img src="../images/painel.png" alt=""> Dashboard</a>
-  <a href="logout.php"> <img src="../images/sair (1).png" alt=""> Sair </a>
+    <a href="dashboard.php"> <img src="images/casa (1).png" alt=""> Início</a>
+    <a href="gestao.php"> <img src="images/rotas.png" alt="">Gestão de Rotas</a>
+    <a href="manutencao.php"><img src="images/manutencao (2).png" alt="">Manutenção</a>
+    <a href="relatorio.php"> <img src="images/relatorio.png" alt="">Relatório e Análise</a>
+    <a href="alertas.php"><img src="images/sinos.png" alt="">Notificações</a>
+    <a href="dashboard2.php"><img src="images/painel.png" alt=""> Dashboard</a>
+  <a href="logout.php"> <img src="images/sair (1).png" alt=""> Sair </a>
   
   </div>
   </div>
@@ -46,7 +46,7 @@ if(!isset($_SESSION['id'])){
   </header>
 
   <div class="manutencao">
-    <h3><img src="../images/dashboard.png" alt="">Relatório e Análise</h3>
+    <h3><img src="images/dashboard.png" alt="">Relatório e Análise</h3>
   </div>
 
   <hr style="height: 2px; background-color: black; border: none; width: 100%; margin-top: 60px;">
@@ -55,32 +55,32 @@ if(!isset($_SESSION['id'])){
   <div class="container-taxas">
     <div class="taxa-pontualidade">
       <p>Taxa de pontualidade</p>
-      <img src="../images/pontualidadetrens.png" alt="">
+      <img src="images/pontualidadetrens.png" alt="">
     </div>
 
     <div class="taxa-pontualidade">
       <p>Taxa de quilometragem</p>
-      <img src="../images/desempenhotrens.png" alt="">
+      <img src="images/desempenhotrens.png" alt="">
     </div>
 
     <div class="taxa-pontualidade">
       <p>Horários de pico</p>
-      <img src="../images/pizza.png" alt="">
+      <img src="images/pizza.png" alt="">
     </div>
 
     <div class="taxa-pontualidade">
       <p>Satisfação de pico</p>
-      <img src="../images/barra.png" alt="">
+      <img src="images/barra.png" alt="">
     </div>
 
     <div class="taxa-pontualidade">
       <p>Passagens vendidas hoje</p>
-      <img src="../images/vendashj.png" alt="">
+      <img src="images/vendashj.png" alt="">
     </div>
 
     <div class="taxa-pontualidade">
       <p>Aumento valor da passagem</p>
-      <img src="../images/porcent.png" alt="">
+      <img src="images/porcent.png" alt="">
     </div>
   </div>
 

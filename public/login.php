@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nos Trilhos - Bem-vindo</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" media="(max-width: 800px)"/>
   
 </head>
@@ -23,7 +23,7 @@
       <p>NOS TRILHOS aonde você tem acesso às linhas de trem.</p>
       <a href="loginfaca.php" class="login-btn">
         Login <i class=""></i>
-        <img src="../images/user (2).png" alt="">
+        <img src="images/user (2).png" alt="">
       </a>
 
       

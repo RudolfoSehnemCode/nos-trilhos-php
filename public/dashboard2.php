@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include __DIR__ . '/../src/config/db.php';
 session_start();
 if(!isset($_SESSION['id'])){
   header("location: loginfaca.php");
@@ -16,7 +16,7 @@ if(!isset($_SESSION['id'])){
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard - NOS TRILHOS</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -29,13 +29,13 @@ if(!isset($_SESSION['id'])){
     <p class="menuside1"><strong>Menu</strong></p>
     <hr>
     <a href="javascript:void(0)" class="fechar-btn1" onclick="fecharSidebar()">✖</a>
-    <a href="../html/dashboard.php"> <img src="../images/casa (1).png" alt=""> Início</a>
-    <a href="../html/gestao.php"> <img src="../images/rotas.png" alt="">Gestão de Rotas</a>
-    <a href="../html/manutencao.php"><img src="../images/manutencao (2).png" alt="">Manutenção</a>
-    <a href="../html/relatorio.php"> <img src="../images/relatorio.png" alt="">Relatório e Análise</a>
-    <a href="../html/alertas.php"><img src="../images/sinos.png" alt="">Notificações</a>
-    <a href="../html/dashboard2.php"><img src="../images/painel.png" alt=""> Dashboard</a>
-     <a href="logout.php"> <img src="../images/sair (1).png" alt=""> Sair </a>
+    <a href="dashboard.php"> <img src="images/casa (1).png" alt=""> Início</a>
+    <a href="gestao.php"> <img src="images/rotas.png" alt="">Gestão de Rotas</a>
+    <a href="manutencao.php"><img src="images/manutencao (2).png" alt="">Manutenção</a>
+    <a href="relatorio.php"> <img src="images/relatorio.png" alt="">Relatório e Análise</a>
+    <a href="alertas.php"><img src="images/sinos.png" alt="">Notificações</a>
+    <a href="dashboard2.php"><img src="images/painel.png" alt=""> Dashboard</a>
+     <a href="logout.php"> <img src="images/sair (1).png" alt=""> Sair </a>
   
   </div>
   </div>
@@ -48,7 +48,7 @@ if(!isset($_SESSION['id'])){
   </header>
 
   <div class="manutencao">
-    <h3><img src="../images/painel (1).png" alt="">Dashboard</h3>
+    <h3><img src="images/painel (1).png" alt="">Dashboard</h3>
   </div>
 
   <hr style="height: 2px; background-color: black; border: none; width: 100%; margin-top: 60px;">
@@ -57,7 +57,7 @@ if(!isset($_SESSION['id'])){
   <section id="estacao-container">
     <div class="estacao-box">
       <div class="estacao-conteudo">
-        <img src="../images/local.png" alt="" class="estacao-imagem">
+        <img src="images/local.png" alt="" class="estacao-imagem">
         <h1 class="estacao-titulo">Estação NOS TRILHOS</h1>
       </div>
     </div>
@@ -73,7 +73,7 @@ if(!isset($_SESSION['id'])){
       </div>
       <div class="info-detalhada">
         <div class="tempo-caminhada">
-          <img src="../images/andando.png" alt="Ícone andando" class="icone-andando">
+          <img src="images/andando.png" alt="Ícone andando" class="icone-andando">
           <span class="texto-caminhada">&lt; 1min</span>
         </div>
         <div class="horario-trem">21:55&gt;22:55</div>
@@ -91,7 +91,7 @@ if(!isset($_SESSION['id'])){
       </div>
       <div class="info-detalhada">
         <div class="tempo-caminhada">
-          <img src="../images/andando.png" alt="Ícone andando" class="icone-andando">
+          <img src="images/andando.png" alt="Ícone andando" class="icone-andando">
           <span class="texto-caminhada">&lt; 15min</span>
         </div>
         <div class="horario-trem">21:05&gt;22:27</div>
@@ -109,7 +109,7 @@ if(!isset($_SESSION['id'])){
       </div>
       <div class="info-detalhada">
         <div class="tempo-caminhada">
-          <img src="../images/andando.png" alt="Ícone andando" class="icone-andando">
+          <img src="images/andando.png" alt="Ícone andando" class="icone-andando">
           <span class="texto-caminhada">&lt; XX:XX</span>
         </div>
         <div class="horario-trem">XX:XX&gt;XX:XX</div>
@@ -127,7 +127,7 @@ if(!isset($_SESSION['id'])){
       </div>
       <div class="info-detalhada">
         <div class="tempo-caminhada">
-          <img src="../images/andando.png" alt="Ícone andando" class="icone-andando">
+          <img src="images/andando.png" alt="Ícone andando" class="icone-andando">
           <span class="texto-caminhada">&lt; 15min</span>
         </div>
         <div class="horario-trem">22:00&gt;23:45</div>

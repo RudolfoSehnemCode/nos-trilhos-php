@@ -1,5 +1,5 @@
 <?php
-include 'db.php'; 
+include __DIR__ . '/../src/config/db.php'; 
 session_start();
 
 $msg = "";
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Login - NOS TRILHOS</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </header>
 
 <div class="login_id">
-    <img class="img-login" src="../images/account.png" alt="Login"/>
+    <img class="img-login" src="images/account.png" alt="Login"/>
     <div class="texto1">
         <?php if (!empty($msg)): ?>
             <div style="color: red; font-size: 16px; margin-bottom: 10px;">
@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form id="loginForm" method="POST">
             <div class="input-box">
                 <div class="img-input">
-                    <img src="../images/email.png" alt="email icon">
+                    <img src="images/email.png" alt="email icon">
                     <input type="email" id="email" name="email" required placeholder="Email...">
                 </div>
             </div>
@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="input-box">
                 <div class="img-input">
-                    <img src="../images/padlock.png" alt="padlock icon">
+                    <img src="images/padlock.png" alt="padlock icon">
                     <input type="password" id="password" name="password" required placeholder="Senha...">
                 </div>
             </div>
