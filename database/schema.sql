@@ -19,8 +19,7 @@ CREATE TABLE log_email (
     verificado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+-- Usuário de teste: teste@gmail.com / senha: 123
 INSERT INTO usuarios (nome, email, senha, cpf, data_nasc, cargo)
 VALUES
-    ('admin', 'admin@gmail.com', 'admin123@', '000.000.000-00', '2000-01-01', 'Admin'),
-    ('Rudolfo', 'rudolfo@gmail.com', 'rudolfo123', '001.000.000-23', '2008-02-28', 'Admin'),
-    ('Pierre', 'pierre@gmail.com', 'pierre123', '123.456.678-10', '2000-01-01', 'Funcionario');
+    ('teste', 'teste@gmail.com', '$2y$10$WOGplODBbSUBa1m3WzUe6u44t98R8a3xJDWi5H9v2rg.K8LUpyBZS', '123.456.789-00', '2008-02-20', 'Admin');
