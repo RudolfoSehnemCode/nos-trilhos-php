@@ -38,7 +38,7 @@ if(!isset($_SESSION['id'])){
      <a href="logout.php"> <img src="images/sair (1).png" alt=""> Sair </a>
   
   </div>
-  </div>
+  
 
 
   <header class="topo2">

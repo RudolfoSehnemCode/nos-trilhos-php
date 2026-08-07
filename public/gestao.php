@@ -33,13 +33,10 @@ if(!isset($_SESSION['id'])){
     <a href="relatorio.php"> <img src="images/relatorio.png" alt="">Relatório e Análise</a>
     <a href="alertas.php"><img src="images/sinos.png" alt="">Notificações</a>
     <a href="dashboard2.php"><img src="images/painel.png" alt=""> Dashboard</a>
-
-    
-
-    <a href="logout.php"> <img src="images/sair (1).png" alt=""> Sair </a>
+     <a href="logout.php"> <img src="images/sair (1).png" alt=""> Sair </a>
   
   </div>
-  </div>
+  
 
   
   <header class="topo2">
@@ -76,6 +73,8 @@ if(!isset($_SESSION['id'])){
 
  
   <script>
+
+    
     function abrirSidebar() {
       document.getElementById("sidebar1").style.width = "220px";
       document.getElementById("botaoAbrirSidebar").style.display = "none";
@@ -86,11 +85,6 @@ if(!isset($_SESSION['id'])){
       document.getElementById("botaoAbrirSidebar").style.display = "block";
     }
 
-    function mostrarMensagem() {
-      document.getElementById("mensagem").style.display = "block";
-    }
-
-    
     function abrirModalSaida() {
       document.getElementById("modalSaida").style.display = "flex";
     }
