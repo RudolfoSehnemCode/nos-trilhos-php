@@ -41,10 +41,11 @@ if(!isset($_SESSION['id'])){
 
 
       .ntUserAdminAddPage__subtitle {
-        margin-top: 12px;
+        margin-top: -25px;
         font-weight: 950;
         color: #3b3b3b;
         text-align: left;
+        position: absolute;
       }
 
       .ntUserAdminAddPage__card {
@@ -147,17 +148,12 @@ if(!isset($_SESSION['id'])){
 <body>
   <?php include __DIR__ . '/../src/partials/sidebar.php'; ?>  
   <header class="topo2">
-
     <div class="topo2">
       NOS TRILHOS
     </div>
   </header>
-  <div class="ntUserAdminAddPage">
-   
-
-     
+  <div class="ntUserAdminAddPage"> 
     <p class="ntUserAdminAddPage__subtitle">Cadastro de Usuário</p>
-
     <div class="ntUserAdminAddPage__card">
       <form action="processa_cadastro.php" method="post">
         <div class="ntUserAdminAddPage__table">
@@ -204,11 +200,9 @@ if(!isset($_SESSION['id'])){
       </form>
     </div>
   </div>
-  
 
   <footer>
     <p class="rodape">NOS TRILHOS</p>
   </footer>  
 </body>
-
 </html>

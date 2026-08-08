@@ -432,39 +432,6 @@ header {
   white-space: pre-wrap;
 }
 
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #484848;
-  overflow-x: hidden;
-  transition: 0.3s;
-  padding-top: 60px;
-  z-index: 1001;
-  text-align: left;
-}
-
-.sidebar img {
-  width: 20px;
-  height: 20px;
-  color: white;
-}
-
-.sidebar a {
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 18px;
-  color: white;
-  display: block;
-  transition: 0.2s;
-}
-
-.sidebar a:hover {
-  background-color: #575757;
-}
-
 .menuside {
   padding-top: 123px;
   padding-left: 10px;
@@ -475,20 +442,6 @@ header {
   font-size: 25px;
 }
 
-.abrir-btn {
-  position: fixed;
-  top: 15.5%;
-  left: 4.5%;
-  z-index: 1100;
-  font-size: 20px;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-}
-
 .fechar-btn {
   position: absolute;
   top: 10px;
@@ -496,18 +449,6 @@ header {
   font-size: 25px;
   text-decoration: none;
   color: white;
-}
-
-@media (max-width: 600px) {
-  .sidebar a {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  .abrir-btn {
-    font-size: 18px;
-    padding: 8px 12px;
-  }
 }
 
 .topo2 {
@@ -756,6 +697,8 @@ table {
   box-shadow: none;
   color: white;
 }
+
+
 
 .fechar-btn1 {
   position: absolute;
@@ -1070,7 +1013,7 @@ table {
 
 .add_funcionario {
   margin-top: 20px;
-  background-color: #003366;
+  background-color: #062f63;
   color: white;
   padding: 12px 24px;
   font-size: 20px;
@@ -1080,16 +1023,11 @@ table {
   width: 30%;
 }
 
-.botao-sair-sidebar{
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #484848;
-  overflow-x: hidden;
-  transition: 0.3s;
-  padding-top: 60px;
-  z-index: 1001;
-  text-align: left;
+.abrir-btn1--preto {
+  color: #484848;
+}
+
+.abrir-btn1--posicao-inicio {
+  top: 131px;
+  left: 20px;
 }

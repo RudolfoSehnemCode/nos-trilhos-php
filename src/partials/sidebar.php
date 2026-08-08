@@ -1,4 +1,4 @@
-<button id="botaoAbrirSidebar" class="abrir-btn1" onclick="abrirSidebar()">☰</button>
+<button id="botaoAbrirSidebar" class="abrir-btn1 <?= $corBotao ?? '' ?> <?= $posicaoBotao ?? '' ?>" onclick="abrirSidebar()">☰</button>
 
 <div id="sidebar1" class="sidebar1 <?= $corSidebar ?? '' ?>">
   <p class="menuside1"><strong>Menu</strong></p>
