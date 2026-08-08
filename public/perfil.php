@@ -32,6 +32,7 @@ if (!$usuario) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -45,34 +46,35 @@ if (!$usuario) {
     include __DIR__ . '/../src/partials/sidebar.php';
     ?>
 
-    <main>
 
+    <main>
         <div class="profile">
             <h2>Editar perfil</h2>
         </div>
-
         <div class="pfp">
             <img src="" alt="Foto de Perfil">
         </div>
-
         <div class="itens-perfil">
             <p>Username: <?= htmlspecialchars($usuario['nome']) ?></p>
             <p>Cpf: <?= htmlspecialchars($usuario['cpf']) ?></p>
             <p>Cargo: <?= htmlspecialchars($usuario['cargo']) ?></p>
             <p>Email: <?= htmlspecialchars($usuario['email']) ?></p>
         </div>
-
         <div class="delete">
             <div>
-                <button>Excluir Conta</button>
+                <form action="deletar_usuario.php" method="POST" class="d-inline">
+                    <button type="submit" name="delete_usuario" value="1" class="btn btn-danger btn-sm"
+                        onclick="return confirm('Tem certeza que deseja excluir sua conta? Essa ação não pode ser desfeita.')">
+                        Excluir usuário
+                    </button>
+                </form>
             </div>
         </div>
-
     </main>
     <footer>
-        <p class="rodape">NOS TRILHOS</p>
+        <div class="rodape">NOS TRILHOS</div>
     </footer>
-
 </body>
+
 
 </html>

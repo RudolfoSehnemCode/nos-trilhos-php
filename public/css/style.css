@@ -7,12 +7,8 @@
 body {
   background-color: #EEEDEB;
   font-family: Arial, sans-serif;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   text-align: center;
   padding: 0;
-  
 }
 
 .incial1 {
@@ -27,7 +23,6 @@ body {
   width: 100px;
   height: auto;
   z-index: 1000;
-
 }
 
 .imagem_trilho img {
@@ -57,9 +52,7 @@ h1 {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s ease;
   margin-top: 250px;
-
 }
 
 .btn-entrar:hover {
@@ -1034,7 +1027,7 @@ table {
 }
 
 .itens-perfil{
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.15);
   border-radius: 10%;
   margin: 0px 20px;
 }
