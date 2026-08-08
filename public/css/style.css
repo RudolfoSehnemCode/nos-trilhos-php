@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   text-align: center;
   padding: 0;
+  
 }
 
 .incial1 {
@@ -42,8 +43,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-
-
 .rail-image {
   width: 150px;
   height: auto;
@@ -66,8 +65,6 @@ h1 {
 .btn-entrar:hover {
   background-color: #555;
 }
-
-
 
 header {
   padding: 10px 20px;
@@ -134,7 +131,6 @@ header {
   height: 20px;
 }
 
-
 @media (max-width: 1800px) {
   h1 {
     font-size: 1.5rem;
@@ -169,8 +165,6 @@ header {
   margin-bottom: 300px;
 }
 
-
-
 .img-login {
   height: 170px;
   margin-top: 30px;
@@ -180,15 +174,10 @@ header {
 .email {
   text-decoration: none;
 
-
 }
 
 .button1 {
-  margin-top: 30px;
-  color: #1D1E1B;
-}
-
-.button1 {
+   margin-top: 30px;
   padding: 12px 24px;
   font-size: 1rem;
   color: white;
@@ -202,16 +191,6 @@ header {
   height: 30px;
   padding-bottom: 25px;
 }
-
-.Remenber-me {
-  display: flex;
-  justify-content: left;
-  gap: 5px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-
-}
-
 
 .input-box {
   position: relative;
@@ -287,18 +266,12 @@ header {
 }
 
 .linha-com-texto {
+  display: flex;
+  align-items: center;
   text-align: center;
   font-weight: bold;
   margin-top: 140px;
   font-size: 25px;
-
-}
-
-.linha-com-texto {
-  display: flex;
-  align-items: center;
-  text-align: center;
-
 }
 
 .linha-com-texto::before,
@@ -330,8 +303,6 @@ header {
   left: 5%;
   top: 40%;
   width: 90%;
-
-
 }
 
 .menu-item {
@@ -353,7 +324,6 @@ header {
   font-size: 20px;
 }
 
-
 .menu-item span:last-child {
   color: #004080;
   font-size: 20px;
@@ -368,15 +338,12 @@ header {
   text-align: left;
   padding: 10px;
   font-weight: bold;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
   color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
-
-
-
 
 .header {
   background-color: #333;
@@ -457,40 +424,6 @@ header {
   white-space: pre-wrap;
 }
 
-
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #484848;
-  overflow-x: hidden;
-  transition: 0.3s;
-  padding-top: 60px;
-  z-index: 1001;
-  text-align: left;
-}
-
-.sidebar img {
-  width: 20px;
-  height: 20px;
-  color: white;
-}
-
-.sidebar a {
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 18px;
-  color: white;
-  display: block;
-  transition: 0.2s;
-}
-
-.sidebar a:hover {
-  background-color: #575757;
-}
-
 .menuside {
   padding-top: 123px;
   padding-left: 10px;
@@ -501,22 +434,6 @@ header {
   font-size: 25px;
 }
 
-
-.abrir-btn {
-  position: fixed;
-  top: 15.5%;
-  left: 4.5%;
-  z-index: 1100;
-  font-size: 20px;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-
 .fechar-btn {
   position: absolute;
   top: 10px;
@@ -524,19 +441,6 @@ header {
   font-size: 25px;
   text-decoration: none;
   color: white;
-}
-
-
-@media (max-width: 600px) {
-  .sidebar a {
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  .abrir-btn {
-    font-size: 18px;
-    padding: 8px 12px;
-  }
 }
 
 .topo2 {
@@ -556,7 +460,6 @@ header {
   margin-left: 50px;
   position: absolute;
   top: 130px;
-
 
 }
 
@@ -588,7 +491,6 @@ header {
   background-color: #f0f0f0;
   padding: 10px;
 
-
 }
 
 .container-gestao p:nth-child(even) {
@@ -618,7 +520,6 @@ header {
   font-size: 20px;
   text-align: left;
 }
-
 
 td {
   border: 1px solid black;
@@ -680,9 +581,6 @@ select {
 
   margin: -40px;
 
-
-
-
 }
 
 .realizadas-container {
@@ -692,7 +590,6 @@ select {
   background-color: #EEEDEB;
 
   border: 2px solid;
-
 
 }
 
@@ -707,8 +604,6 @@ table {
   border-collapse: collapse;
   margin-top: 15px;
 }
-
-
 
 @media (max-width: 500px) {
   .titulo {
@@ -781,7 +676,6 @@ table {
   font-size: 25px;
 }
 
-
 .abrir-btn1 {
   position: fixed;
   top: 43px;
@@ -797,6 +691,7 @@ table {
 }
 
 
+
 .fechar-btn1 {
   position: absolute;
   top: 10px;
@@ -805,7 +700,6 @@ table {
   text-decoration: none;
   color: white;
 }
-
 
 @media (max-width: 600px) {
   .sidebar1 a {
@@ -819,8 +713,6 @@ table {
   }
 }
 
-
-
 .fundo-modal-saida {
   display: none;
   position: fixed;
@@ -833,7 +725,6 @@ table {
   align-items: center;
   z-index: 999;
 }
-
 
 .caixa-confirmacao-saida {
   background-color: #444;
@@ -900,7 +791,6 @@ table {
   display: flex;
   justify-content: center;
   align-items: left;
-
 
 }
 
@@ -1007,18 +897,14 @@ table {
 
 .painel-notificacoes__cabecalho {
   font-size: 1.8rem;
-  
   margin-bottom: 0;
   padding-bottom: 0;
   margin-left: -190px;
   margin-top: 40px;
 
-
 }
 
-
 .notificacao-card {
-
   border-radius: 40px;
   padding: 10px;
   margin-bottom: 10px;
@@ -1026,9 +912,7 @@ table {
   margin-left: 5px;
   margin-right: 3px;
   background-color: #c9cbcf;
-  
 }
-
 
 .notificacao-card__cabecalho {
   display: flex;
@@ -1053,13 +937,11 @@ table {
   font-size: 0.9rem;
 }
 
-
 .notificacao-card__conteudo {
   line-height: 1.6;
   color: #2c3e50;
   font-size: 1rem;
 }
-
 
 .notificacao-card__divisor {
   border: none;
@@ -1067,7 +949,6 @@ table {
 
   margin: 20px 0;
 }
-
 
 .filtro-notificacoes {
   display: flex;
@@ -1095,12 +976,7 @@ table {
 .painel-notificacoes-ferroviarias img {
   width: 25px;
   height: 25px;
-
-
-
 }
-
-
 
 .line-bar {
   display: flex;
@@ -1112,11 +988,11 @@ table {
 .acoes-notificacao {
   display: flex;
   align-items: center;
-  gap: 10px; 
+  gap: 10px;
 }
 
 .icone-excluir {
-  width: 20px; 
+  width: 20px;
   height: 20px;
   cursor: pointer;
 }
@@ -1129,7 +1005,7 @@ table {
 
 .add_funcionario {
   margin-top: 20px;
-  background-color: #003366;
+  background-color: #062f63;
   color: white;
   padding: 12px 24px;
   font-size: 20px;
@@ -1137,21 +1013,13 @@ table {
   border-radius: 25px;
   cursor: pointer;
   width: 30%;
-  
 }
 
-.botao-sair-sidebar{
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #484848;
-  overflow-x: hidden;
-  transition: 0.3s;
-  padding-top: 60px;
-  z-index: 1001;
-  text-align: left;
+.abrir-btn1--preto {
+  color: #484848;
 }
 
-
+.abrir-btn1--posicao-inicio {
+  top: 131px;
+  left: 20px;
+}

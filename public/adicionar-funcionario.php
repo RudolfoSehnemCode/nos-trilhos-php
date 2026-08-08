@@ -24,7 +24,7 @@ if(!isset($_SESSION['id'])){
     <style>
       
       .ntUserAdminAddPage {
-        padding: 20px 16px;
+        padding: 8px 8px 30px 8px;
         max-width: 920px;
         width: 100%;
         margin: 0 auto 24px auto;
@@ -41,10 +41,11 @@ if(!isset($_SESSION['id'])){
 
 
       .ntUserAdminAddPage__subtitle {
-        margin-top: 12px;
+        margin-top: -25px;
         font-weight: 950;
         color: #3b3b3b;
         text-align: left;
+        position: absolute;
       }
 
       .ntUserAdminAddPage__card {
@@ -138,48 +139,19 @@ if(!isset($_SESSION['id'])){
       @media (min-width: 768px) {
         .ntUserAdminAddPage__row { grid-template-columns: 1fr 1fr; column-gap: 16px; }
       }
-
-      
       .ntUserAdminAddPage + footer .rodape { position: static; }
     </style>
 </head>
 
 <body>
-  
-    <button id="botaoAbrirSidebar" class="abrir-btn1" onclick="abrirSidebar()">☰</button>
-
-  
-   <div id="sidebar1" class="sidebar1">
-    <p class="menuside1"><strong>Menu</strong></p>
-    <hr>
-    <a href="javascript:void(0)" class="fechar-btn1" onclick="fecharSidebar()">✖</a>
-    <a href="dashboard.php"> <img src="images/casa (1).png" alt=""> Início</a>
-    <a href="gestao.php"> <img src="images/rotas.png" alt="">Gestão de Rotas</a>
-    <a href="manutencao.php"><img src="images/manutencao (2).png" alt="">Manutenção</a>
-    <a href="relatorio.php"> <img src="images/relatorio.png" alt="">Relatório e Análise</a>
-    <a href="alertas.php"><img src="images/sinos.png" alt="">Notificações</a>
-    <a href="dashboard2.php"><img src="images/painel.png" alt=""> Dashboard</a>
-
-    
-
-  <a href="logout.php"> <img src="images/sair (1).png" alt=""> Sair </a>
-  
-  </div>
-  </div>
-
-  
+  <?php include __DIR__ . '/../src/partials/sidebar.php'; ?>  
   <header class="topo2">
-
     <div class="topo2">
       NOS TRILHOS
     </div>
   </header>
-  <div class="ntUserAdminAddPage">
-   
-
-     
+  <div class="ntUserAdminAddPage"> 
     <p class="ntUserAdminAddPage__subtitle">Cadastro de Usuário</p>
-
     <div class="ntUserAdminAddPage__card">
       <form action="processa_cadastro.php" method="post">
         <div class="ntUserAdminAddPage__table">
@@ -226,32 +198,9 @@ if(!isset($_SESSION['id'])){
       </form>
     </div>
   </div>
-  
 
   <footer>
     <p class="rodape">NOS TRILHOS</p>
   </footer>
-
-
-<script>
-    function abrirSidebar() {
-      document.getElementById("sidebar1").style.width = "220px";
-      document.getElementById("botaoAbrirSidebar").style.display = "none";
-    }
-
-    function fecharSidebar() {
-      document.getElementById("sidebar1").style.width = "0";
-      document.getElementById("botaoAbrirSidebar").style.display = "block";
-    }
-
-    function mostrarMensagem() {
-      document.getElementById("mensagem").style.display = "block";
-    }
-
-  
-  </script>
-
-  
 </body>
-
 </html>
