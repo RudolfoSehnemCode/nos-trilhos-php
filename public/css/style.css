@@ -508,7 +508,6 @@ header {
   width: 90%;
   margin: 30px auto;
   background-color: #EEEDEB;
-
   border: 2px solid;
 }
 
@@ -559,26 +558,8 @@ select {
   font-weight: bold;
 }
 
-@media (max-width: 500px) {
-  .titulo {
-    font-size: 18px;
-    padding: 12px;
-  }
-
-  select {
-    font-size: 14px;
-    padding: 6px;
-  }
-
-  .botao-confirmar {
-    font-size: 16px;
-    padding: 10px;
-  }
-}
-
 .manutencao {
   font-size: 25px;
-
   margin: -40px;
 
 }
@@ -588,7 +569,6 @@ select {
   width: 90%;
   margin: 30px auto;
   background-color: #EEEDEB;
-
   border: 2px solid;
 
 }
@@ -609,6 +589,16 @@ table {
   .titulo {
     font-size: 18px;
     padding: 12px;
+  }
+
+  select {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .botao-confirmar {
+    font-size: 16px;
+    padding: 10px;
   }
 
   td {
@@ -1022,4 +1012,35 @@ table {
 .abrir-btn1--posicao-inicio {
   top: 131px;
   left: 20px;
+}
+
+.profile{
+  margin-top: 140px;
+}
+
+.pfp {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.pfp img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.itens-perfil{
+  background-color: gray;
+  border-radius: 10%;
+  margin: 0px 20px;
+}
+
+.itens-perfil p{
+  text-align: left;
+  margin: 20px;
+  padding: 15px 0;
 }
