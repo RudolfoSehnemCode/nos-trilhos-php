@@ -10,6 +10,7 @@
   <a href="relatorio.php"> <img src="images/relatorio.png" alt="">Relatório e Análise</a>
   <a href="alertas.php"><img src="images/sinos.png" alt="">Notificações</a>
   <a href="dashboard2.php"><img src="images/painel.png" alt=""> Dashboard</a>
+  <a href="perfil.php"><img src="images/user (2).png" alt="">Meu Perfil</a>
   <a href="logout.php"> <img src="images/sair (1).png" alt=""> Sair </a>
 </div>
 

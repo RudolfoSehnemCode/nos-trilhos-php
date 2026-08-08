@@ -8,7 +8,8 @@ CREATE TABLE usuarios (
     senha VARCHAR(255) NOT NULL,
     cpf VARCHAR(14) NOT NULL UNIQUE,
     data_nasc DATE NOT NULL,
-    cargo ENUM('Funcionario', 'Admin') NOT NULL
+    cargo ENUM('Funcionario', 'Admin') NOT NULL,
+    foto VARCHAR(255) DEFAULT NULL
 );
 
 CREATE TABLE log_email (
