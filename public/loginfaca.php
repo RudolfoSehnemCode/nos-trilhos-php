@@ -71,11 +71,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
             </div>
 
-            <div class="Remenber-me">
-                <input type="checkbox">
-                
-            </div>
-
             <div class="btn">
                 <button type="submit" class="button1">Login</button>
             </div>

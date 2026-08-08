@@ -24,7 +24,7 @@ if(!isset($_SESSION['id'])){
     <style>
       
       .ntUserAdminAddPage {
-        padding: 8px;
+        padding: 8px 8px 30px 8px;
         max-width: 920px;
         width: 100%;
         margin: 0 auto 24px auto;
@@ -139,8 +139,6 @@ if(!isset($_SESSION['id'])){
       @media (min-width: 768px) {
         .ntUserAdminAddPage__row { grid-template-columns: 1fr 1fr; column-gap: 16px; }
       }
-
-      
       .ntUserAdminAddPage + footer .rodape { position: static; }
     </style>
 </head>
@@ -203,6 +201,6 @@ if(!isset($_SESSION['id'])){
 
   <footer>
     <p class="rodape">NOS TRILHOS</p>
-  </footer>  
+  </footer>
 </body>
 </html>

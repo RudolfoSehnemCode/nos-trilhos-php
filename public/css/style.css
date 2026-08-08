@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   text-align: center;
   padding: 0;
+  
 }
 
 .incial1 {
@@ -189,15 +190,6 @@ header {
   width: 110px;
   height: 30px;
   padding-bottom: 25px;
-}
-
-.Remenber-me {
-  display: flex;
-  justify-content: left;
-  gap: 5px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-
 }
 
 .input-box {
