@@ -57,16 +57,6 @@ if(!isset($_SESSION['id'])){
         Próximo Trens: Trem 1 às 15:30, Trem 2 às 16:45, Trem 3 às 17:50. Embarque com segurança!
       </div>
     </div>
-
-    <div class="notificacao-card">
-      <div class="notificacao-card__cabecalho">
-        <span class="notificacao-card__titulo"> <img src="images/notificacao.png" alt="">Notificação</span>
-        <span class="notificacao-card__horario">Seg 2:46 PM</span>
-      </div>
-      <div class="notificacao-card__conteudo">
-        Próximo Trens: Trem 1 às 15:30, Trem 2 às 16:45, Trem 3 às 17:50. Embarque com segurança!
-      </div>
-    </div>
   </div>
 
   
