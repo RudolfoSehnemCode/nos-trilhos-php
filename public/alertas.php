@@ -62,28 +62,20 @@ if(!isset($_SESSION['id'])){
   
   <script>
 
-    function limparNotificacoes() {
-      const cards = document.querySelectorAll(".notificacao-card");
-      cards.forEach(card => card.style.display = "none");
-    }
-
     let notificacoesAtivas = true;
 
     function alternarNotificacoes(elemento) {
-      const cards = document.querySelectorAll(".notificacao-card");
-
-      if (notificacoesAtivas) {
-        cards.forEach(card => card.style.display = "none");
-        elemento.textContent = "Ativar";
-      } else {
-        cards.forEach(card => card.style.display = "block");
-        elemento.textContent = "Desativar";
-      }
-
       notificacoesAtivas = !notificacoesAtivas;
+      document.querySelectorAll(".notificacao-card").forEach(card => {
+        card.style.display = notificacoesAtivas ? "block" : "none";
+      });
+      elemento.textContent = notificacoesAtivas ? "Desativar" : "Ativar";
     }
 
-   
+    function limparNotificacoes() {
+      document.querySelectorAll(".notificacao-card").forEach(card => card.style.display = "none");
+    }
+
   </script>
 
 </body>
