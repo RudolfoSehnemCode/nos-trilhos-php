@@ -5,24 +5,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nos Trilhos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="incial1">
-        <div>
-            <h1>NOS TRILHOS</h1>
+    <div class="d-flex flex-column align-items-center justify-content-center vh-100 text-center gap-4">
+        <h1>NOS TRILHOS</h1>
 
+        <div class="d-flex flex-column align-items-center gap-2">
+            <p class="load-move">Loading...</p>
+            <img src="images/trilhos.png" alt="" class="img-fluid">
         </div>
-        <div>
-            <div>
-                <p class="load-move">Loading...</p>
-                <img src="images/trilhos.png" alt="">
-            </div>
-            <a href="login.php">
-                <button class="btn-entrar">Entrar</button>
-            </a>
-        </div>
+
+        <a href="login.php">
+            <button class="btn btn-primary btn-dark">Entrar</button>
+        </a>
     </div>
 </body>
 
