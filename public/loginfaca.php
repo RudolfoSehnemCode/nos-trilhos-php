@@ -1,5 +1,13 @@
 <?php
-include __DIR__ . '/../src/config/db.php'; 
+include __DIR__ . '/../src/config/db.php';
+
+session_set_cookie_params([
+    'lifetime' => 0,
+    'path' => '/',
+    'httponly' => true,
+    'samesite' => 'Strict',
+    'secure' => isset($_SERVER['HTTPS'])
+]);
 session_start();
 
 $msg = "";
@@ -8,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $sql = "SELECT * FROM usuarios WHERE email = ?";
+    $sql = "SELECT id, email, senha, cargo FROM usuarios WHERE email = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("s", $email);
     $stmt->execute();
@@ -17,9 +25,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows > 0) {
         $user = $result->fetch_assoc();
         if (password_verify($password, $user['senha'])) {
+            session_regenerate_id(true);
             $_SESSION['id'] = $user['id'];
             $_SESSION['email'] = $user['email'];
             $_SESSION['user_cargo'] = $user['cargo'];
+            $stmt->close();
             header("Location: dashboard.php");
             exit();
         } else {
@@ -28,6 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $msg = "Login inválido.";
     }
+    $stmt->close();
 }
 ?>
 
