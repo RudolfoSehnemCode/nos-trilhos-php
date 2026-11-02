@@ -1,3 +1,4 @@
 # Fotos de perfil enviadas pelos usuários
 public/images/perfil/*
 !public/images/perfil/.gitkeep
+src/config/db.php
