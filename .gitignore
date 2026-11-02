@@ -2,3 +2,4 @@
 public/images/perfil/*
 !public/images/perfil/.gitkeep
 src/config/db.php
+vendor/
